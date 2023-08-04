@@ -13,9 +13,17 @@ export default function Home() {
       return;
     }
 
-    //generate fibonacci numbers using api
+    await fetch('api/calculateFibonacci', {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({n}),
+    });
 
     router.push(`/results?n=${n}`);
+
+  }
 
   return (
     <>
