@@ -1,0 +1,5 @@
+-- CreateTable
+CREATE TABLE "Fibonacci" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "value" INTEGER NOT NULL
+);
